@@ -19,7 +19,7 @@ TV::ARIB::ProgramGenre - Utilities for TV program genre of ARIB
 # DESCRIPTION
 
 TV::ARIB::ProgramGenre is the utilities for TV program genre of ARIB.
-Details about ARIB TV program genre are in [http://www.arib.or.jp/english/html/overview/doc/2-STD-B10v5_1.pdf](http://www.arib.or.jp/english/html/overview/doc/2-STD-B10v5_1.pdf).
+Details about ARIB TV program genre are in [http://www.arib.or.jp/english/html/overview/doc/2-STD-B10v5_1.pdf](http://www.arib.or.jp/english/html/overview/doc/2-STD-B10v5_1.pdf) (Japanese pdf).
 
 # FUNCTIONS
 
@@ -29,7 +29,7 @@ Details about ARIB TV program genre are in [http://www.arib.or.jp/english/html/o
 
 - get\_genre\_id($genre\_name)
 
-    Get genre ID by genre name. It returns array reference like so \[$parent\_genre\_id, $child\_genre\_id\]
+    Get genre ID by genre name. It returns array reference like so `[$parent_genre_id, $child_genre_id]`
 
 - get\_parent\_genre\_name($parent\_genre\_id)
 
