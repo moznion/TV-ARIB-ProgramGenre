@@ -2,8 +2,10 @@
 
 use strict;
 use warnings;
-use utf8;
-use Test::Synopsis::Expectation;
+
+use Test::More;
+eval { require Test::Synopsis::Expectation };
+plan skip_all => "Test::Synopsis::Expectation is not installed." if $@;
 
 all_synopsis_ok();
 
