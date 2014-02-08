@@ -6,10 +6,11 @@ use utf8;
 use FindBin;
 use lib "$FindBin::Bin/../lib";
 
-use ARIB::ProgramGenre;
+use TV::ARIB::ProgramGenre qw/get_genre_name get_genre_id
+                              get_parent_genre_name get_parent_genre_id/;
 
-print ARIB::ProgramGenre::get_name(0,0);
-use Data::Dumper; warn Dumper(ARIB::ProgramGenre::get_id('時代劇'));
+my $genre = get_genre_name(0, 1);
+my $id    = get_genre_id('国内アニメ');
 
-# print ARIB::ProgramGenre::ChildGenre::News->new->get_child_genre_name(1);
-# print ARIB::ProgramGenre::ChildGenre::News->new->get_child_genre_id('天気');
+my $parent_genre    = get_parent_genre_name(1);
+my $parent_genre_id = get_parent_genre_id('ドラマ');
