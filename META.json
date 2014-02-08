@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Utilities for TV program genre of ARIB",
    "author" : [
       "moznion <moznion@gmail.com>"
    ],
@@ -37,12 +37,16 @@
          "requires" : {
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion" : "0.10108",
+            "Test::Perl::Critic" : "0",
             "Test::Pod" : "1.41",
-            "Test::Spellunker" : "v0.2.7"
+            "Test::Spellunker" : "v0.2.7",
+            "Test::Synopsis::Expectation" : "0"
          }
       },
       "runtime" : {
          "requires" : {
+            "Encode" : "0",
+            "parent" : "0",
             "perl" : "5.008005"
          }
       },
