@@ -23,8 +23,8 @@ my %args = (
         'Module::Build' => 0.38,
     },
 
-    name            => 'ARIB-ProgramGenre',
-    module_name     => 'ARIB::ProgramGenre',
+    name            => 'TV-ARIB-ProgramGenre',
+    module_name     => 'TV::ARIB::ProgramGenre',
     allow_pureperl => 0,
 
     script_files => [glob('script/*'), glob('bin/*')],

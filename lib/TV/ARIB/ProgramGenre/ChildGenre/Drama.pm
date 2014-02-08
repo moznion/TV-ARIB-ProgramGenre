@@ -1,14 +1,14 @@
-package ARIB::ProgramGenre::ChildGenre::Anime;
+package TV::ARIB::ProgramGenre::ChildGenre::Drama;
 use strict;
 use warnings;
 use utf8;
-use parent qw/ARIB::ProgramGenre::ChildGenre/;
+use parent qw/TV::ARIB::ProgramGenre::ChildGenre/;
 
 sub CHILD_GENRES {
     return [
-        '国内アニメ', # 0x0
-        '海外アニメ', # 0x1
-        '特撮',       # 0x2
+        '国内ドラマ', # 0x0
+        '海外ドラマ', # 0x1
+        '時代劇',     # 0x2
         '',           # 0x3
         '',           # 0x4
         '',           # 0x5

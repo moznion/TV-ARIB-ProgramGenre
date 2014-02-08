@@ -1,8 +1,8 @@
-package ARIB::ProgramGenre::ChildGenre::Theater;
+package TV::ARIB::ProgramGenre::ChildGenre::Theater;
 use strict;
 use warnings;
 use utf8;
-use parent qw/ARIB::ProgramGenre::ChildGenre/;
+use parent qw/TV::ARIB::ProgramGenre::ChildGenre/;
 
 sub CHILD_GENRES {
     return [

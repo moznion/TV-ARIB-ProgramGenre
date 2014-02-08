@@ -1,4 +1,4 @@
-package ARIB::ProgramGenre;
+package TV::ARIB::ProgramGenre;
 use 5.008005;
 use strict;
 use warnings;
@@ -104,15 +104,15 @@ __END__
 
 =head1 NAME
 
-ARIB::ProgramGenre - It's new $module
+TV::ARIB::ProgramGenre - It's new $module
 
 =head1 SYNOPSIS
 
-    use ARIB::ProgramGenre;
+    use TV::ARIB::ProgramGenre;
 
 =head1 DESCRIPTION
 
-ARIB::ProgramGenre is ...
+TV::ARIB::ProgramGenre is ...
 
 =head1 LICENSE
 

@@ -1,14 +1,15 @@
+[![Build Status](https://travis-ci.org/moznion/TV-ARIB-ProgramGenre.png?branch=master)](https://travis-ci.org/moznion/TV-ARIB-ProgramGenre)
 # NAME
 
-ARIB::ProgramGenre - It's new $module
+TV::ARIB::ProgramGenre - It's new $module
 
 # SYNOPSIS
 
-    use ARIB::ProgramGenre;
+    use TV::ARIB::ProgramGenre;
 
 # DESCRIPTION
 
-ARIB::ProgramGenre is ...
+TV::ARIB::ProgramGenre is ...
 
 # LICENSE
 

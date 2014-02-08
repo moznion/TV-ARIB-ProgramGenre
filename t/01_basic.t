@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use utf8;
 use Encode qw/encode_utf8/;
-use ARIB::ProgramGenre qw/get_genre_name get_genre_id get_parent_genre_name get_parent_genre_id/;
+use TV::ARIB::ProgramGenre qw/get_genre_name get_genre_id get_parent_genre_name get_parent_genre_id/;
 
 use Test::More;
 

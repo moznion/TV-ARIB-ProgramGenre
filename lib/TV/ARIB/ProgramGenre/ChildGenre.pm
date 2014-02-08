@@ -1,4 +1,4 @@
-package ARIB::ProgramGenre::ChildGenre;
+package TV::ARIB::ProgramGenre::ChildGenre;
 use strict;
 use warnings;
 use utf8;

@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "ARIB-ProgramGenre",
+   "name" : "TV-ARIB-ProgramGenre",
    "no_index" : {
       "directory" : [
          "t",
@@ -53,5 +53,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/moznion/TV-ARIB-ProgramGenre/issues"
+      },
+      "homepage" : "https://github.com/moznion/TV-ARIB-ProgramGenre",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/moznion/TV-ARIB-ProgramGenre.git",
+         "web" : "https://github.com/moznion/TV-ARIB-ProgramGenre"
+      }
+   },
    "version" : "0.01"
 }
