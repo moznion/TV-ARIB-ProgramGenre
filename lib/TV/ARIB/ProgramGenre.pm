@@ -104,15 +104,47 @@ __END__
 
 =head1 NAME
 
-TV::ARIB::ProgramGenre - It's new $module
+TV::ARIB::ProgramGenre - Utilities for TV program genre of ARIB
 
 =head1 SYNOPSIS
 
-    use TV::ARIB::ProgramGenre;
+    use utf8;
+    use Encode qw/encode_utf8/;
+    use TV::ARIB::ProgramGenre qw/get_genre_name get_genre_id
+                                  get_parent_genre_name get_parent_genre_id/;
+
+    my $genre = get_genre_name(0, 1); # => encode_utf8('天気')
+    my $id    = get_genre_id('国内アニメ'); # => is_deeply [7, 0]
+
+    my $parent_genre    = get_parent_genre_name(1);      # => encode_utf8('スポーツ')
+    my $parent_genre_id = get_parent_genre_id('ドラマ'); # => 3
 
 =head1 DESCRIPTION
 
-TV::ARIB::ProgramGenre is ...
+TV::ARIB::ProgramGenre is the utilities for TV program genre of ARIB.
+Details about ARIB TV program genre are in L<http://www.arib.or.jp/english/html/overview/doc/2-STD-B10v5_1.pdf>.
+
+=head1 FUNCTIONS
+
+=over 4
+
+=item * get_genre_name($parent_genre_id, $child_genre_id)
+
+Get genre name by parent genre ID and child genre ID
+
+=item * get_genre_id($genre_name)
+
+Get genre ID by genre name
+
+=item * get_parent_genre_name($parent_genre_id)
+
+Get parent genre name by parent genre ID
+
+=item * get_parent_genre_id($parent_genre_name)
+
+Get parent genre ID by parent genre name
+
+=back
 
 =head1 LICENSE
 
