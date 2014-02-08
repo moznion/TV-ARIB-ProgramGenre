@@ -113,7 +113,7 @@ TV::ARIB::ProgramGenre - Utilities for TV program genre of ARIB
     use TV::ARIB::ProgramGenre qw/get_genre_name get_genre_id
                                   get_parent_genre_name get_parent_genre_id/;
 
-    my $genre = get_genre_name(0, 1); # => encode_utf8('天気')
+    my $genre = get_genre_name(0, 1);       # => encode_utf8('天気')
     my $id    = get_genre_id('国内アニメ'); # => is_deeply [7, 0]
 
     my $parent_genre    = get_parent_genre_name(1);      # => encode_utf8('スポーツ')
@@ -134,7 +134,7 @@ Get genre name by parent genre ID and child genre ID
 
 =item * get_genre_id($genre_name)
 
-Get genre ID by genre name
+Get genre ID by genre name. It returns array reference like so [$parent_genre_id, $child_genre_id]
 
 =item * get_parent_genre_name($parent_genre_id)
 
