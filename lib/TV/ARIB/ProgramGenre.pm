@@ -102,6 +102,8 @@ __END__
 
 =encoding utf-8
 
+=for stopwords pdf)
+
 =head1 NAME
 
 TV::ARIB::ProgramGenre - Utilities for TV program genre of ARIB

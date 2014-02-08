@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Test::More;
-eval { require Test::Synopsis::Expectation };
+eval { use Test::Synopsis::Expectation };
 plan skip_all => "Test::Synopsis::Expectation is not installed." if $@;
 
 all_synopsis_ok();
